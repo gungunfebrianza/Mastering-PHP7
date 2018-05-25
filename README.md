@@ -31,7 +31,7 @@ Special Chapter : Quadruple Attack AJAX, PHP dan MySQL<br>
 ---------------------------------------------------------------------------------------------------------------------------------
 MIT License
 
-Copyright (c) 2018 Gun Gun Febrianza
+Copyleft (c) 2018-2020 Gun Gun Febrianza & Rian Gustandi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
