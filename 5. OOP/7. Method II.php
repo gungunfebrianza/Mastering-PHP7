@@ -1,19 +1,19 @@
 <?php
-class ShopProduct
+class book
 {
-    public $title = "default product";
-    public $producerMainName = "main name";
-    public $producerFirstName = "first name";
-    public $price = 0;
+    public $title = "Mastering PHP 7";
+    public $author = "Gun Gun Febrianza";
+    public $volume;
+    public $price;
 
-    public function getProducer()
+    public function getTitle()
     {
-        return $this->producerFirstName . " ". $this->producerMainName;
+        return $this->title . " Written by " . $this->author;
     }
 }
-$product1 = new ShopProduct();
-$product1->title = "My Antonia";
-$product1->producerMainName = "Cather";
-$product1->producerFirstName = "Willa";
-$product1->price = 5.99;
-print "author: {$product1->getProducer()}\n";
+$product1 = new book();
+$product1->title = "Mastering PHP 7 (2018)";
+$product1->author = "Gun Gun Febrianza";
+$product1->volume = "5";
+$product1->price = 125000.99;
+print "author: {$product1->getTitle()}\n";

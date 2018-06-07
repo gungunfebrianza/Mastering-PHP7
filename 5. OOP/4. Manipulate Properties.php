@@ -1,12 +1,12 @@
 <?php
-class ShopProduct
+class book
 {
-    public $title = "default product";
-    public $producerMainName = "main name";
-    public $producerFirstName = "first name";
-    public $price = 0;
+    public $title;
+    public $author;
+    public $volume;
+    public $price;
 }
-  $product1 = new ShopProduct();
-  $product2 = new ShopProduct();
-  $product1->title="Bitcoin";
-  $product2->title="Cocoa";
+  $product1 = new book();
+  $product2 = new book();
+  $product1->title="Mastering Bitcoin Scripting";
+  $product2->title="Mastering Nothing";

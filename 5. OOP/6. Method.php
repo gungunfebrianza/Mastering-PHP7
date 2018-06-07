@@ -1,15 +1,15 @@
 <?php
-class ShopProduct
+class book
 {
-    public $title = "default product";
-    public $producerMainName = "main name";
-    public $producerFirstName = "first name";
-    public $price = 0;
+    public $title = "Mastering PHP 7";
+    public $author = "Gun Gun Febrianza";
+    public $volume;
+    public $price;
 
-    public function getProducer()
+    public function getTitle()
     {
-        return $this->producerFirstName . " ". $this->producerMainName;
+        return $this->title . " Written by " . $this->author;
     }
 }
-  $product1 = new ShopProduct();
-  print $product1->getProducer();
+  $product1 = new book();
+  print $product1->getTitle();

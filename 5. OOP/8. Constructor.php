@@ -1,27 +1,28 @@
 <?php
-class ShopProduct
+class book
 {
     public $title;
-    public $producerMainName;
-    public $producerFirstName;
-    public $price = 0;
+    public $author;
+    public $volume;
+    public $price;
 
-    public function __construct($title, $firstName, $mainName, $price)
+    public function __construct($title, $author, $volume, $price)
     {
         $this->title = $title;
-        $this->producerFirstName = $firstName;
-        $this->producerMainName = $mainName;
+        $this->author = $author;
+        $this->volume = $volume;
         $this->price = $price;
     }
-    public function getProducer()
+    public function getTitle()
     {
-        return $this->producerFirstName . " " . $this->producerMainName;
+        return $this->title . " Written by " . $this->author;
     }
 }
-$product1 = new ShopProduct(
-    "My Antonia",
-    "Willa",
-    "Cather",
-    5.99
+
+$product1 = new book(
+    "Mastering PHP 7",
+    "Gun Gun Febrianza",
+    "3",
+    125000.99
   );
-print "author: {$product1->getProducer()}\n";
+print "author: {$product1->getTitle()}\n";

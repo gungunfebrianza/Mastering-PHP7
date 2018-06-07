@@ -1,10 +1,10 @@
 <?php
-class ShopProduct
+class book
 {
-    public $title = "default product";
-    public $producerMainName = "main name";
-    public $producerFirstName = "first name";
-    public $price = 0;
+    public $title = "Mastering PHP 7";
+    public $author;
+    public $volume;
+    public $price;
 }
-  $product1 = new ShopProduct();
+  $product1 = new book();
   print $product1->title;

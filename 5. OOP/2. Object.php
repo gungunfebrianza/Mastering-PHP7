@@ -1,7 +1,7 @@
 <?php
-class ShopProduct
+class book
 {
     // class body
 }
-  $product1 = new ShopProduct();
-var_dump($product1);
+  $product1 = new book();
+  var_dump($product1);

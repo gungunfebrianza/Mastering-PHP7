@@ -1,6 +1,5 @@
 <?php
-class ShopProduct
+class book
 {
-// class body
+    // class body
 }
-?>
