@@ -5,6 +5,7 @@ class ShopProduct
     public $producerMainName;
     public $producerFirstName;
     public $price = 0;
+
     public function __construct($title, $firstName, $mainName, $price)
     {
         $this->title = $title;
@@ -17,3 +18,10 @@ class ShopProduct
         return $this->producerFirstName . " " . $this->producerMainName;
     }
 }
+$product1 = new ShopProduct(
+    "My Antonia",
+    "Willa",
+    "Cather",
+    5.99
+  );
+print "author: {$product1->getProducer()}\n";
