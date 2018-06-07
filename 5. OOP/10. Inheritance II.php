@@ -36,8 +36,16 @@ class bookSeries extends book
     {
         return $this->volume;
     }
+
+    public function getAll()
+    {
+        $base = parent::getTitle();
+        $base .= $this->getVolume();
+        return $base;
+    }
 }
 
 $buku = new bookSeries("Mastering PHP 7", "Gun Gun Febrianza", 3, 125000.999);
 print "Series Ke : {$buku->getVolume()}\n";
 print "Harga : {$buku->getPrice()}\n";
+print "All Info : {$buku->getAll()}\n";
