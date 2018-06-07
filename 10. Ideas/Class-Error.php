@@ -39,4 +39,21 @@ class error_management
         // Report all PHP errors (see changelog)
         error_reporting(E_ALL);
     }
+
+    public function errorReportCustom(string $function)
+    {
+        set_error_handler($function);
+    }
 }
+
+//error handler function
+function customError($errlevel, $errmessage, $errfile, $errline)
+{
+    echo "<b>Code Error:</b> [$errlevel] $errmessage $errfile $errline";
+}
+
+$test = new error_management();
+//$test->errorReportStop();
+//$test->errorReportAll();
+$test->errorReportCustom("customError");
+echo($teest);
