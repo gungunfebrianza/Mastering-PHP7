@@ -1,3 +1,4 @@
+<?php
 /*
 Error Report Level :
 
@@ -19,14 +20,11 @@ error_file 	Optional. Specifies the filename in which the error occurred
 error_line 	Optional. Specifies the line number in which the error occurred
 error_context 	Optional. Specifies an array containing every variable, and their values, in use when the error occurred
 */
-<?php
+
 //error handler function
-function customError($errlevel, $errmessage, $errfile, $errline, $err)
+function customError($errlevel, $errmessage, $errfile, $errline)
 {
     echo "<b>Code Error:</b> [$errlevel] $errmessage $errfile $errline";
-    foreach ($err as $key => $value) {
-        echo "$err++";
-    }
 }
 
 //set error handler
@@ -34,4 +32,3 @@ set_error_handler("customError");
 
 //trigger error
 echo($test);
-?>
