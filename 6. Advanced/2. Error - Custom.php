@@ -20,15 +20,14 @@ error_file 	Optional. Specifies the filename in which the error occurred
 error_line 	Optional. Specifies the line number in which the error occurred
 error_context 	Optional. Specifies an array containing every variable, and their values, in use when the error occurred
 */
+//set error handler
+set_error_handler("customError");
 
 //error handler function
 function customError($errlevel, $errmessage, $errfile, $errline)
 {
     echo "<b>Code Error:</b> [$errlevel] $errmessage $errfile $errline";
 }
-
-//set error handler
-set_error_handler("customError");
 
 //trigger error
 echo($test);
