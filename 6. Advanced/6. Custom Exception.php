@@ -1,4 +1,3 @@
-
 <?php
 class customException extends Exception
 {
@@ -23,4 +22,3 @@ try {
     //display custom message
     echo $e->errorMessage();
 }
-?> 

@@ -8,11 +8,8 @@ class ShopProduct
 
     public function getProducer()
     {
-        return $this->producerFirstName . " "
-. $this->producerMainName;
+        return $this->producerFirstName . " ". $this->producerMainName;
     }
 }
   $product1 = new ShopProduct();
-  $product1->title = "Bitcoin";
-  $product1->arbitraryAddition = "ethereum";
-  print $product1->arbitraryAddition;
+  print $product1->getProducer();
