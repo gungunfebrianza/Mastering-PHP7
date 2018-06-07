@@ -44,6 +44,11 @@ class error_management
     {
         set_error_handler($function);
     }
+
+    public function errorTrigger(string $mssg, int $code)
+    {
+        trigger_error($mssg, $code);
+    }
 }
 
 //error handler function
@@ -56,4 +61,5 @@ $test = new error_management();
 //$test->errorReportStop();
 //$test->errorReportAll();
 $test->errorReportCustom("customError");
+$test->errorTrigger("icikibum", 1024);
 echo($teest);
