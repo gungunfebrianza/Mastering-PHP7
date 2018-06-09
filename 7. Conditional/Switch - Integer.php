@@ -1,4 +1,3 @@
-
 <?php
 
 switch ($i) {
@@ -12,4 +11,3 @@ switch ($i) {
         echo "i equals 2";
         break;
 }
-?>
